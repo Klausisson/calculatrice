@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="global.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+      <table class="calculatrice" id="calc">
+          <tr>
+              <td colspan="4" class="calc_td_resultat">
+                  <input type="text" readonly="readonly" id="afficheur" onkeydown="" />
+              </td>
+          </tr>
+          <tr>
+              <td class="calc_td_btn">
+                      <input type="button" class="calc_btn" value="CE" onclick="" />
+              </td>
+              <td class="calc_td_btn">
+                      <input type="button" class="calc_btn" value="&larr;" onclick="" />
+              </td>
+              <td class="calc_td_btn">
+                      <input type="button" class="calc_btn" value="%" onclick="operation();" />
+              </td>
+              <td class="calc_td_btn">
+                      <input type="button" class="calc_btn" value="+" onclick="operation();" />
+              </td>
+          </tr>
+          <tr>
+              <td class="calc_td_btn">
+                      <input type="button" class="calc_btn" value="7" onclick="saisi();" />
+              </td>
+              <td class="calc_td_btn">
+                      <input type="button" class="calc_btn" value="8" onclick="saisi();" />
+              </td>
+              <td class="calc_td_btn">
+                      <input type="button" class="calc_btn" value="9" onclick="saisi();" />
+              </td>
+              <td class="calc_td_btn">
+                      <input type="button" class="calc_btn" value="-" onclick="operation();" />
+              </td>
+          </tr>
+                      <tr>
+              <td class="calc_td_btn">
+                      <input type="button" class="calc_btn" value="4" onclick="saisi();" />
+              </td>
+              <td class="calc_td_btn">
+                      <input type="button" class="calc_btn" value="5" onclick="saisi();" />
+              </td>
+              <td class="calc_td_btn">
+                      <input type="button" class="calc_btn" value="6" onclick="saisi();" />
+              </td>
+              <td class="calc_td_btn">
+                      <input type="button" class="calc_btn" value="x" onclick="operation();" />
+              </td>
+          </tr>
+          <tr>
+              <td class="calc_td_btn">
+                      <input type="button" class="calc_btn" value="1" onclick="saisi();" />
+              </td>
+              <td class="calc_td_btn">
+                      <input type="button" class="calc_btn" value="2" onclick="saisi();" />
+              </td>
+              <td class="calc_td_btn">
+                      <input type="button" class="calc_btn" value="3" onclick="saisi();" />
+              </td>
+              <td class="calc_td_btn">
+                      <input type="button" class="calc_btn" value="&divide;" onclick="operation();" />
+              </td>
+          </tr>
+          <tr>
+              <td class="calc_td_btn">
+                      <input type="button" class="calc_btn" value="0" onclick="saisi();" />
+              </td>
+              <td class="calc_td_btn">
+                      <input type="button" class="calc_btn" value="&plusmn;" onclick="" />
+              </td>
+              <td class="calc_td_btn">
+                      <input type="button" class="calc_btn" value="," onclick="" />
+              </td>
+              <td class="calc_td_btn">
+                      <input type="button" class="calc_btn" value="=" onclick="" />
+              </td>
+          </tr>
+      </table>
+      <script type="text/javascript">
+              document.getElementById('calc').onload=initialiser_calc('calc');
+      </script>
+  </body>
+</html>
