@@ -3,89 +3,88 @@
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="global.css" />
-    <script src="script.js"></script>
+
   </head>
 
   <body>
       <table class="calculatrice" id="calc">
           <tr>
               <td colspan="4" class="calc_td_resultat">
-                  <input type="text" readonly="readonly" id="afficheur" onkeydown="" />
+                  <input type="text" readonly="readonly" id="afficheur"/>
               </td>
           </tr>
           <tr>
               <td class="calc_td_btn">
-                      <input type="button" class="calc_btn" value="CE" onclick="" />
+                      <input type="button" class="calc_btn" value="CE" onclick="stop(this);" />
               </td>
               <td class="calc_td_btn">
                       <input type="button" class="calc_btn" value="&larr;" onclick="" />
               </td>
               <td class="calc_td_btn">
-                      <input type="button" class="calc_btn" value="%" onclick="operation();" />
+                      <input type="button" class="calc_btn" value="%" onclick="add(this);" />
               </td>
               <td class="calc_td_btn">
-                      <input type="button" class="calc_btn" value="+" onclick="operation();" />
+                      <input type="button" class="calc_btn" value="+" onclick="add(this);" />
               </td>
           </tr>
           <tr>
               <td class="calc_td_btn">
-                      <input type="button" class="calc_btn" value="7" onclick="saisi();" />
+                      <input type="button" class="calc_btn" value="7" onclick="add(this);" />
               </td>
               <td class="calc_td_btn">
-                      <input type="button" class="calc_btn" value="8" onclick="saisi();" />
+                      <input type="button" class="calc_btn" value="8" onclick="add(this);" />
               </td>
               <td class="calc_td_btn">
-                      <input type="button" class="calc_btn" value="9" onclick="saisi();" />
+                      <input type="button" class="calc_btn" value="9" onclick="add(this);" />
               </td>
               <td class="calc_td_btn">
-                      <input type="button" class="calc_btn" value="-" onclick="operation();" />
+                      <input type="button" class="calc_btn" value="-" onclick="add(this);" />
               </td>
           </tr>
                       <tr>
               <td class="calc_td_btn">
-                      <input type="button" class="calc_btn" value="4" onclick="saisi();" />
+                      <input type="button" class="calc_btn" value="4" onclick="add(this);" />
               </td>
               <td class="calc_td_btn">
-                      <input type="button" class="calc_btn" value="5" onclick="saisi();" />
+                      <input type="button" class="calc_btn" value="5" onclick="add(this);" />
               </td>
               <td class="calc_td_btn">
-                      <input type="button" class="calc_btn" value="6" onclick="saisi();" />
+                      <input type="button" class="calc_btn" value="6" onclick="add(this);" />
               </td>
               <td class="calc_td_btn">
-                      <input type="button" class="calc_btn" value="x" onclick="operation();" />
-              </td>
-          </tr>
-          <tr>
-              <td class="calc_td_btn">
-                      <input type="button" class="calc_btn" value="1" onclick="saisi();" />
-              </td>
-              <td class="calc_td_btn">
-                      <input type="button" class="calc_btn" value="2" onclick="saisi();" />
-              </td>
-              <td class="calc_td_btn">
-                      <input type="button" class="calc_btn" value="3" onclick="saisi();" />
-              </td>
-              <td class="calc_td_btn">
-                      <input type="button" class="calc_btn" value="&divide;" onclick="operation();" />
+                      <input type="button" class="calc_btn" value="*" onclick="add(this);" />
               </td>
           </tr>
           <tr>
               <td class="calc_td_btn">
-                      <input type="button" class="calc_btn" value="0" onclick="saisi();" />
+                      <input type="button" class="calc_btn" value="1" onclick="add(this);" />
               </td>
               <td class="calc_td_btn">
-                      <input type="button" class="calc_btn" value="&plusmn;" onclick="" />
+                      <input type="button" class="calc_btn" value="2" onclick="add(this);" />
               </td>
               <td class="calc_td_btn">
-                      <input type="button" class="calc_btn" value="," onclick="" />
+                      <input type="button" class="calc_btn" value="3" onclick="add(this);" />
               </td>
               <td class="calc_td_btn">
-                      <input type="button" class="calc_btn" value="=" onclick="" />
+                      <input type="button" class="calc_btn" value="&divide;" onclick="add(this);" />
+              </td>
+          </tr>
+          <tr>
+              <td class="calc_td_btn">
+                      <input type="button" class="calc_btn" value="0" onclick="add(this);" />
+              </td>
+              <td class="calc_td_btn">
+                      <input type="button" class="calc_btn" value="&plusmn;" onclick="signe();" />
+              </td>
+              <td class="calc_td_btn">
+                      <input type="button" class="calc_btn" value="," onclick="signe();" />
+              </td>
+              <td class="calc_td_btn">
+                      <input type="button" class="calc_btn" value="=" onclick="egal(operation);" />
               </td>
           </tr>
       </table>
-      <script type="text/javascript">
-              document.getElementById('calc').onload=initialiser_calc('calc');
-      </script>
+
+      <script src="script.js"></script>
   </body>
 </html>
