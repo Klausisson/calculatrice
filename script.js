@@ -2,15 +2,15 @@ var operation = "";
 var result = 0;
 
 function  add(element) {
-  console.log(element.value);
+
   //stocker
   operation += element.value;
   document.getElementById("afficheur").value = operation;
   //afficher
 }
 function stop(){
- // operation // mettre la string (operation) VIDE
- location.reload(); // on rafraichi la page afin de vidé la variable operation.
+operation = "";
+ // on rafraichi la page afin de vidé la variable operation.
 }
 
 function egal(oper) {
